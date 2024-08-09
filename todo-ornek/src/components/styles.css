@@ -1,0 +1,116 @@
+.App {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .Todo {
+    background-color: wheat;
+    text-align: center;
+    width: 50%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  button {
+    width: 70px;
+    height: 35px;
+    background-color: sandybrown;
+    border: none;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .input {
+    border: none;
+    width: 500px;
+    height: 35px;
+    border-radius: 9px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .Top {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  li:before {
+    content: "*";
+    margin-right: 5px;
+  }
+
+  .demo-btn1-hover {
+    margin-left: 10px;
+    transition: 0.3s ease all;
+    color: blue;
+    border:2px solid 
+transparent;
+}
+.demo-btn1-hover:hover{
+    color: 
+rgb(226, 19, 70);
+    border-color: currentColor; /* Current Color = mevcut text rengi */
+    background-color: 
+#fff;
+}
+
+
+/* styles.css */
+
+.task {
+  margin-bottom: 10px; /* Space between list items */
+  background-color: #fff3cd; /* Light yellow background for visibility */
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures spacing around items */
+}
+
+.task span {
+  flex-grow: 1; /* Makes the task name expand */
+  margin-right: 10px; /* Space between the task name and the buttons */
+}
+
+.task button {
+  margin-left: 5px; /* Space between buttons */
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.task button.destroy {
+  background-color: #f44336;
+  color: white;
+}
+
+.task button.demo-btn1-hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.task button:hover {
+  opacity: 0.8;
+}
